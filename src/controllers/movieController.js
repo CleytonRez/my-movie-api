@@ -4,7 +4,7 @@ export default (app) => {
 
     if (app) {
 
-        app.get('/movie', async (request, response) => {
+        app.get('/movies', async (request, response) => {
             const movies = await readMovies()
             const data = {
                 response: movies
@@ -14,7 +14,7 @@ export default (app) => {
             response.json(data)
         })
 
-        app.post('/movie', async (request, response) => {
+        app.post('/movies', async (request, response) => {
             const body = request.body
 
             const idCreateMovie = await createMovie(body)
@@ -24,7 +24,7 @@ export default (app) => {
             })
         })
 
-        app.put('/movie/:id', async (request, response) => {
+        app.put('/movies/:id', async (request, response) => {
             const body = request.body;
             const id = request.params.id;
             body.id = Number(id)
@@ -37,7 +37,7 @@ export default (app) => {
             })
         })
 
-        app.delete('/movie/:id', async (request, response) => {
+        app.delete('/movies/:id', async (request, response) => {
             const id = Number(request.params.id);
             console.log(id)
 
