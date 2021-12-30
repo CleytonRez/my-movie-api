@@ -26,7 +26,7 @@ export const createMovie = async (movieCreate) => {
         const parseJSON = JSON.parse(file)
         console.log("PARSEJSON: ", parseJSON)
 
-        movieCreate.id = Math.random()
+        movieCreate.id = Math.floor(Math.random() * 100)
 
         console.log("PARSEJSON.DATA: ", parseJSON.data)
         parseJSON.data.push(movieCreate)
