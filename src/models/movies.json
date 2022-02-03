@@ -1,1 +1,19 @@
-{"data":[{"id":1,"name":"Corra","genero":"Terror"},{"name":"Alice","genero":"Aventura","id":78},{"name":"Até que a Morte nos Separe","genero":"Comédia","id":43}]}
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Corra",
+            "genero": "Terror"
+        },
+        {
+            "name": "Alice",
+            "genero": "Aventura",
+            "id": 78
+        },
+        {
+            "name": "Até que a Morte nos Separe",
+            "genero": "Comédia",
+            "id": 43
+        }
+    ]
+}
